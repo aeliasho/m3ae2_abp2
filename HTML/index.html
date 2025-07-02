@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio BEM</title>
+  <link rel="stylesheet" href="/CSS/styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <img src="/assets/img/boombox-fill.svg" alt="logopagina" class="nav_logo" />
+
+      <ul class="nav__menu">
+        <li class="nav__item nav__item--activo"><a href="#">Inicio</a></li>
+        <li class="nav__item"><a href="#">Productos</a></li>
+        <li class="nav__item"><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="main__articulo main__articulo--destacado">
+      <article class="articulo">
+        <div class="articulo__titulo">
+          <h1>Bienvenidos a nuestro sitio</h1>
+        </div>
+        <div class="articulo__texto">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+        <div class="articulo__imagen">
+          <img src="https://us.123rf.com/450wm/novitskiy1980/novitskiy19801707/novitskiy1980170700025/82508911-icono-de-vector-plano-de-línea-con-boombox-de-dispositivo-de-audio-eléctrico-retro-ilustración.jpg?ver=6" alt="Radio noventera" />
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section class="formulario">
+    <h2 class="formulario__titulo">Contacto</h2>
+    <form action="#" method="post" class="formulario__form">
+      <div class="formulario__campo">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+      </div>
+      <div class="formulario__campo">
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="formulario__campo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+      </div>
+      <div class="formulario__boton-container">
+        <button type="submit" class="formulario__boton formulario__boton--enviado">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__info">
+      <p class="footer__texto">Estudiante Antonio Eliash &copy; 2025</p>
+    </div>
+    <div class="footer__redes">
+        <img src="/assets/img/chat-right-text.svg" alt="Mensaje" class="footer__icono" />
+        <img src="/assets/img/envelope-at.svg" alt="Email" class="footer__icono" />
+        <img src="/assets/img/linkedin.svg" alt="linkedin" class="footer__icono" />
+    </div>
+  </footer>
+
+</body>
+</html>
